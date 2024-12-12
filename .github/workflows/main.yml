@@ -22,7 +22,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.6.1
         with:
-          images: hello-world-node
+          images: tomorowscoder/hello-world-node
 
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v6.10.0
