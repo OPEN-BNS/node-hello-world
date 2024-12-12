@@ -28,6 +28,6 @@ jobs:
         uses: docker/build-push-action@v6.10.0
         with:
           context: .
-          push: .
+          push: true
           tags: ${{ steps.meta.output.tags }}
           labels: ${{ steps.meta.output.labels }}
